@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Drive Me - Hire professional drivers anytime, anywhere.">
+    <meta name="keywords" content="drivers, hire, transportation, services">
+    <title>Drive Me - Hire Professional Drivers Anytime, Anywhere</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, orangered, #00CFFF);
+            padding: 20px;
+            color: white;
+        }
+
+        .navbar h1 {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .navbar nav {
+            display: inline-block;
+            float: right;
+        }
+        .navbar img {
+            margin-left: 37px;
+            margin-bottom: -7px;
+            border-radius: 50%;
+        }
+
+        .navbar nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+        .hero-btn {
+            background-color: #e9c46a;
+            padding: 10px 25px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+        }
+
+        .hero-btn:hover {
+            background-color: #f4a261;
+        }
+
+        
+        .banner {
+            background-image: url('./car.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 120vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .banner-content{
+            margin-bottom: 550px;
+        }
+
+        .banner h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: rgb(248, 136, 136);
+        }
+        .banner h2:hover{
+            color: #333;
+            transform: scale(1.05);
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, orangered, #00CFFF);
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        
+        .search-form {
+            margin-top: 25px;
+        }
+
+        #search-box {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .search-form button {
+            padding: 10px;
+            background: linear-gradient(135deg, orangered, #00CFFF);
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            padding: 4rem 10%;
+            background-color: #f1f1f1;
+        }
+
+        .feature {
+            text-align: center;
+            width: 30%;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+        .feature:hover{
+            transform: scale(1.05);
+        }
+        .feature a{
+            text-decoration: none;
+        }
+
+        .feature i {
+            font-size: 3rem;
+            color: #2a9d8f;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+            color: #2a9d8f;
+        }
+
+        .feature p {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .img-section {
+            display: flex;
+            flex-direction: column;
+            padding: 4rem 10%;
+            gap: 2rem;
+         }
+
+         .img-container1 img, .img-container2 img {
+            width: 750px;
+            height: 420px;
+            object-fit: cover;
+            border-radius: 10px;
+         }
+         
+         .img-container1{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+         }
+
+         .img-container2{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            
+         }
+
+         hr {
+            border: none;              
+            height: 2px;               
+            background-color: rgb(199, 178, 178);  
+            width: 100%;               
+            margin: 20px 0;            
+         }
+       
+        #imgh:hover{
+            transform: translateY(-10px);
+         }
+
+
+        #line1{
+            font-size: 20px;
+            margin-top: 10px;
+
+        }
+        #line1:hover{
+            transform: scale(1.005);
+            color: rgb(234, 80, 80);
+        }
+ 
+        .stats-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px ;
+            background: linear-gradient(135deg, rgb(194, 183, 180), #9dcfdb);
+        }
+
+        .stat-item img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease; 
+        }
+
+        .stat-item img:hover {
+            transform: scale(1.1); 
+        }
+
+        .stat-item h2 {
+            margin: 10px 0;
+            font-size: 2rem;
+            color: #653212; 
+        }
+
+        .stat-item p {
+            font-size: 1rem;
+            color: #cfd8e3;
+        }
+        #abhi23 {
+            color: #1c2a38;
+        }
+
+
+        footer {
+            background: linear-gradient(135deg, orangered, #00CFFF);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .footer-links a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin-right: 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .stats-section {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+                 <img src="./logodrive.jpg.jpeg" alt="Drive Me Logo" style="height: 50px; vertical-align: middle;"><br>
+                <h1>Drive Me</h1>
+            <nav>
+                <a href="#banner">Home</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="#service">Our Services</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="signup.html" class="hero-btn">Sign Up</a>
+                
+            </nav>
+        </div>
+    </header>
+
+    
+    <section class="banner" id="banner">
+        <div class="banner-content">
+            <h2>Hire Professional Drivers Anytime, Anywhere</h2>
+            <a href="bookingdriver.html" class="cta-button">Book a Driver Now</a>
+            <form class="search-form" id="search-form">
+                <input type="text" placeholder="Enter your city or zip code" id="search-box">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="features" id="service">
+        <div class="feature"><a href="availablenormal.html">
+            <h3>Available Drivers</h3>
+            <p>Explore our qualified drivers available 24/7 for reliable transportation services tailored to your needs.</p>
+        </a>
+        </div>
+        <div class="feature">
+            <a href="becomedriver.html">
+            <h3>Become a Driver</h3>
+            <p>Join our team and earn money by providing flexible driving services to satisfied customers.</p>
+        </a>
+        </div>
+        <div class="feature"><a href="safety.html">
+            <h3>Customer Safety</h3>
+            <p>Customer Safety is our priority with background-checked drivers and strict COVID-19 safety measures.</p>
+            </a>
+        </div>
+    </section>
+ 
+    <section class="img-section" id="images">
+        <div class="img-container1">
+            <img src="./driveme11.jpg" alt="Image 1" id="imgh">
+            <p id="line1">Book a driver any time, day or night. Our on-demand service ensures reliable transportation whenever you need it most. With professional drivers available 24/7, we make travel seamless and stress-free, whether it's for daily commutes, special occasions, or last-minute plans. Experience convenience and safety with us!
+            </p>
+            <hr>
+        </div>
+        <div class="img-container2">
+            <img src="./driveme12.jpg" alt="Image 2" id="imgh">
+            <p id="line1">Experience peace of mind with our skilled, highly-trained drivers, dedicated to providing exceptional service. With a focus on safety, comfort, and reliability, they make every journey smooth and secure. Whether for daily rides or special occasions, our drivers are committed to meeting your needs and making travel worry-free.
+            </p>
+            <hr>
+        </div>
+        <div class="img-container1">
+            <img src="./driveme13.jpg" alt="Image 3" id="imgh">
+            <p id="line1">We offer flexible options to meet all your travel needs, including hourly bookings, event transportation, and special travel packages. Customize your journey with services tailored to your unique requirements. Whether it's for business, leisure, or special events, our solutions provide convenience, comfort, and flexibility whenever you need it.
+            </p>
+            <hr>
+        </div>
+        <div class="img-container2">
+            <img src="./driveme14.jpg" alt="Image 4" id="imgh">
+            <p id="line1">Your safety is our top priority. Each driver undergoes rigorous background checks and extensive training to meet the highest industry standards. We are committed to providing you with a secure and worry-free journey, ensuring that you can travel with confidence, knowing you are in capable and trustworthy hands.
+            </p><hr>
+        </div>
+
+        <div class="img-container1">
+        <img src="./driveme15.jpeg" alt="Image 5" id="imgh">
+        <p id="line1">Using our website, you can easily track your driver's real-time location and estimated time of arrival (ETA). Stay informed throughout your journey with timely updates, ensuring you know exactly when your driver will pick you up or drop you off, providing you with peace of mind and convenience.
+        </p>
+        <hr>
+    </div>
+    
+    <div class="img-container2">
+        <img src="./help247.jpg" alt="Image 6" id="imgh">
+        <p id="line1">Our friendly support team is available 24/7 to assist you with any questions or concerns. Whether you need help with booking, have inquiries about your ride, or require assistance during your journey, we're here to ensure your experience is smooth and enjoyable. Reach out to us anytime!
+        </p>
+        <hr>
+    </div>
+    </section>
+    
+    <footer>
+        <div class="stats-section">
+            <div class="stat-item">
+                <img src="./CARlogo1.jpeg" height="50" width="50" alt="Movements carried out">
+                <h2>+1,000,000</h2>
+                <p id="abhi23">Movements carried out</p>
+            </div>
+
+            <div class="stat-item">
+                <img src="./satisfaction.jpeg" height="50" width="50" alt="Satisfaction Icon">
+                <h2>98%</h2>
+                <p id="abhi23">Customer satisfaction rate</p>
+            </div>
+
+            <div class="stat-item">
+                <img src="./client11.jpeg" height="50" width="50" alt="Clients Icon">
+                <h2>+150,000</h2>
+                <p id="abhi23">Clients</p>
+            </div>
+
+            <div class="stat-item">
+                <img src="./countries.jpeg" height="50" width="50" alt="Globe Icon">
+                <h2>9 countries</h2>
+                <p id="abhi23">International presence</p>
+            </div>
+        </div>
+
+        <div class="footer-links">
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                <img src="./fblogo.jpeg" alt="Facebook" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                <img src="./twilogo.jpeg" alt="Twitter" style="width: 24px; height: 24px;">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                <img src="./instalogo.jpeg" alt="Instagram" style="width: 24px; height: 24px;">
+            </a>
+        </div>
+        <p>&copy; 2024 Drive Me.</p>
+    </footer>
+</body>
+</html>
